@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-//import 'aframe';
-//import 'mind-ar/dist/mindar-image-aframe.prod.js';
+// import 'aframe';
+// import 'mind-ar/dist/mindar-image-aframe.prod.js';
 
 export default () => {
   const sceneRef = useRef(null);
@@ -9,7 +9,7 @@ export default () => {
     const sceneEl = sceneRef.current;
     const arSystem = sceneEl.systems["mindar-image-system"];
     sceneEl.addEventListener('renderstart', () => {
-      arSystem.start(); // start AR 
+      arSystem.start(); // start AR
     });
     return () => {
       arSystem.stop();
