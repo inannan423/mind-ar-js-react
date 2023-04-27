@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
-import MindARViewer from './mindar-viewer';
-// import MindARThreeViewer from './mindar-three-viewer';
+// import MindARViewer from './mindar-viewer';
+import MindARThreeViewer from './mindar-three-viewer';
 import {IoMdImages} from "react-icons/io";
 import {MdFaceRetouchingNatural} from "react-icons/md";
 import {HiFingerPrint} from "react-icons/hi"
@@ -96,7 +96,7 @@ function App() {
             {
                 mode === 'image' && (
                     <div className={'h-full'}>
-                        <MindARViewer/>
+                        <MindARThreeViewer/>
                     </div>
                 )
             }
