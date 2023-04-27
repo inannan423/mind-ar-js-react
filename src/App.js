@@ -51,6 +51,7 @@ function App() {
                         <a
                             href={'/pages/basic.html'}
                             target={'_blank'}
+                            rel={'noreferrer'}
                             className={'w-full flex flex-col my-1 mt-8 px-8 lg:px-48 2xl:px-96 cursor-pointer'}
                             // onClick={()=>{
                             //   setMode('image')
