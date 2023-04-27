@@ -48,11 +48,13 @@ function App() {
                             Made with <b className={'text-blue-400'}>MindAR</b> by Chengzihan.
                         </div>
 
-                        <div
+                        <a
+                            href={'/pages/basic.html'}
+                            target={'_blank'}
                             className={'w-full flex flex-col my-1 mt-8 px-8 lg:px-48 2xl:px-96 cursor-pointer'}
-                            onClick={()=>{
-                              setMode('image')
-                            }}
+                            // onClick={()=>{
+                            //   setMode('image')
+                            // }}
                         >
                             <div className={'w-full h-32 overflow-hidden bg-green-100 rounded-md relative border-2 border-green-500 flex items-center px-3 py-2'}>
                                 <h1 className={'font-bold text-5xl text-green-500 opacity-70 font-sans text-center'}>
@@ -60,7 +62,7 @@ function App() {
                                 </h1>
                                 <IoMdImages className={'text-green-500 absolute right-0 bottom-0 opacity-30 text-[200px] ml-5'}/>
                             </div>
-                        </div>
+                        </a>
 
                         <div
                             className={'w-full flex flex-col my-1 px-8 lg:px-48 2xl:px-96 cursor-pointer'}
