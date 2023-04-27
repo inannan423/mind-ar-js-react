@@ -11,7 +11,7 @@ function App() {
     // menu, image, interactive,face
     const [mode, setMode] = useState('menu');
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden h-full ">
             {/*  <h1 className={'text-red-500 text-2xl'}>Example React component with <a href="https://github.com/hiukim/mind-ar-js" rel="noreferrer" target="_blank">MindAR</a></h1>*/}
 
             {/*  <div className="control-buttons">*/}
@@ -95,7 +95,7 @@ function App() {
 
             {
                 mode === 'image' && (
-                    <div className={'h-full'}>
+                    <div className={'h-max '}>
                         <MindARThreeViewer/>
                     </div>
                 )
