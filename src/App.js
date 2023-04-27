@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import './App.css';
-import MindARViewer from './mindar-viewer';
-// import MindARThreeViewer from './mindar-three-viewer';
 import {IoMdImages} from "react-icons/io";
 import {MdFaceRetouchingNatural} from "react-icons/md";
 import {HiFingerPrint} from "react-icons/hi"
@@ -9,7 +7,6 @@ import {HiFingerPrint} from "react-icons/hi"
 function App() {
     // const [started, setStarted] = useState(null);
     // menu, image, interactive,face
-    const [mode, setMode] = useState('menu');
     return (
         <div className="overflow-hidden h-full ">
             {/*  <h1 className={'text-red-500 text-2xl'}>Example React component with <a href="https://github.com/hiukim/mind-ar-js" rel="noreferrer" target="_blank">MindAR</a></h1>*/}
@@ -67,15 +64,16 @@ function App() {
                     </div>
                 </a>
 
+                <p className={'text-gray-400 text-base mt-2'}>
+                    扫描下方图片，查看效果
+                </p>
+
                 <div className={'h-full px-8 lg:px-48 2xl:px-96 '}>
                     <img src={'/c.jpg'} alt={'c'} className={'w-full h-full object-cover border-red-500 border-2'}/>
                 </div>
 
                 <div
                     className={'w-full flex flex-col my-1 px-8 lg:px-48 2xl:px-96 cursor-pointer'}
-                    onClick={() => {
-                        setMode('face')
-                    }}
                 >
                     <div
                         className={'w-full h-32 overflow-hidden bg-red-100 rounded-md relative border-2 border-pink-500 flex items-center px-3 py-2'}>
@@ -89,9 +87,6 @@ function App() {
 
                 <div
                     className={'w-full flex flex-col my-1 px-8 lg:px-48 2xl:px-96 cursor-pointer'}
-                    onClick={() => {
-                        setMode('interactive')
-                    }}
                 >
                     <div
                         className={'w-full h-32 overflow-hidden bg-blue-100 rounded-md relative border-2 border-blue-500 flex items-center px-3 py-2'}>
