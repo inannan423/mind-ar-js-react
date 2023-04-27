@@ -62,7 +62,10 @@ function App() {
                     </div>
                 </a>
 
-                <div
+                <a
+                    href={'/pages/interative.html'}
+                    target={'_blank'}
+                    rel={'noreferrer'}
                     className={'w-full flex flex-col my-1 px-8 lg:px-48 2xl:px-96 cursor-pointer'}
                 >
                     <div
@@ -73,7 +76,7 @@ function App() {
                         <HiFingerPrint
                             className={'text-blue-500 absolute right-0 bottom-0 opacity-30 text-[200px] ml-5'}/>
                     </div>
-                </div>
+                </a>
 
                 <p className={'text-gray-400 text-base mt-2'}>
                     扫描下方图片，查看效果
