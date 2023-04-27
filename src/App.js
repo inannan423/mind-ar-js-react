@@ -1,21 +1,13 @@
 import React, {useState} from 'react';
 import './App.css';
 import MindARViewer from './mindar-viewer';
-import MindARThreeViewer from './mindar-three-viewer';
+// import MindARThreeViewer from './mindar-three-viewer';
 import {IoMdImages} from "react-icons/io";
 import {MdFaceRetouchingNatural} from "react-icons/md";
 import {HiFingerPrint} from "react-icons/hi"
 
-function Card(title,link,color) {
-    return (
-        <div className={`rounded-2xl ${color} w-full h-96`}>
-            {title}
-        </div>
-    )
-}
-
 function App() {
-    const [started, setStarted] = useState(null);
+    // const [started, setStarted] = useState(null);
     // menu, image, interactive,face
     const [mode, setMode] = useState('menu');
     return (
