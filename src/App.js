@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import {IoMdImages} from "react-icons/io";
 import {MdFaceRetouchingNatural} from "react-icons/md";
